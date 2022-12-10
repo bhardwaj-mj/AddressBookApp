@@ -80,6 +80,51 @@ header {
     align-items: center;
 }
 
-.cancel-button {
-    width: 70px;
+/* .cancel-button {
+    width: 60px;
+} */
+
+#img {
+    padding-left: 290px;
+    padding-right: 40px;
+}
+
+.row-content {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+    align-items: center;
+    border: 0px solid green;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+.text {
+    text-align: left;
+    font: normal normal normal 18px/24px Roboto;
+    letter-spacing: 0px;
+    color: #42515F;
+    opacity: 1;
+}
+
+.input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+.input-content {
+    width: 300px;
+    margin-right: 10px;
 }
