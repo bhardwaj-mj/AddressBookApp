@@ -25,6 +25,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
 });
 
 const save = () => {
+
     try{
         let contactList = createAddressBook();
         createAndUpdateStorage(contactList);
@@ -32,9 +33,8 @@ const save = () => {
         return;
     }
 };
-
 const createAddressBook = () => {
-    
+
     let contactList = new AddressBookContact();
 
     try {
@@ -53,7 +53,6 @@ const createAddressBook = () => {
     alert(contactList.toString());
     return contactList;
 };
-
 const getInputValueById = (id) => {
     let value = document.querySelector(id).value;
     return value;
@@ -69,7 +68,6 @@ function createAndUpdateStorage(contactList) {
     alert(addressBookList.toString());
     localStorage.setItem("AddressBookList", JSON.stringify(addressBookList));
 };
-
 const resetForm = () => {
     setValue('#name', '');
     setValue('#phone', '');
