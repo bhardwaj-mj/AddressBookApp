@@ -26,10 +26,10 @@ window.addEventListener('DOMContentLoaded', (event) => {
 
 const save = () => {
     let contactList = createAddressBook();
-};
 
+};
 const createAddressBook = () => {
-    
+
     let contactList = new AddressBookContact();
 
     contactList.name = getInputValueById('#name');
@@ -41,8 +41,9 @@ const createAddressBook = () => {
     alert(contactList.toString());
     return contactList;
 };
-
 const getInputValueById = (id) => {
     let value = document.querySelector(id).value;
     return value;
 };
+
+
