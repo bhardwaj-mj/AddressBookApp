@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="addressbookHomePage.css">
+    <link rel="stylesheet" href="AddressBookHomePage.css">
     <title>Address Book App</title>
 </head>
 <body>
@@ -22,39 +22,17 @@
             <div class="adbk-text-3">
                 Person Details
             </div>
-            <a href="/AddressBookFormPage.html" class="add-button">
+            <a href="AddressBookFormPage.html" class="add-button">
                 <img src="../assets/icons/add-24px.svg" alt="">Add Person
             </a>
         </div>
         <div class="table-main">
             <table id="display" class="table">
-                <tr>
-                    <th></th>
-                    <th>FullName</th>
-                    <th>Address</th>
-                    <th>City</th>
-                    <th>State</th>
-                    <th>Zip Code</th>
-                    <th>Phone Number</th>
-                    <th></th>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td>Manoj Kumar</td>
-                    <td>Rajiv colony,Safidon</td>
-                    <td>Jind</td>
-                    <td>Haryana</td>
-                    <td>126112</td>
-                    <td>999999999</td>
-                    <td>
-                        <img id="1" onclick="remove(this)" alt="delete"
-                        src="../assets/icons/delete-black-18dp.svg">
-                        <img id="1" alt="edit" onclick="update(this)"
-                        src="../assets/icons/create-black-18dp.svg">
-                    </td>    
-                </tr>
             </table>      
         </div>
     </div>
+    <script src="AddressBookHomePage.js"></script>
+    <script src="site_properties.js"></script>
+    <script src="AddressBooKContact.js"></script>
 </body>
 </html>
